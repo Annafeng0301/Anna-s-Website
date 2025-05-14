@@ -1,4 +1,6 @@
 /* A simple css reset */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 body,
 html {
     margin: 0;
@@ -16,30 +18,26 @@ img {
 
 /* The hero section styling- use your OWN Hero Image URL here */
 .hero {
-    background-image: url('file:///C:/Users/24768/Downloads/Yellow%20And%20Purple%20Gradient%20Coming%20Soon%20Email%20Header.png');
     height: 25vh;
+    background-image: url('Header.png');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(81,66,105);
+    color: white;
     text-align: center;
     position: relative;
+    z-index: 1;
 }
 
-/* BIG text styling for the hero section text */
-.hero-text {
-    font-size: 4em;
-    font-weight: bold;
-}
 
 /* nice big font on a banner style background */
 .topic-title{
     color: white;
     font-size: 2em;
     padding: 0.1em 3em;
-    background-color: rgb(81,66,105);
+    background-color: rgb(71, 71, 71);
 }
 
 /* Three column grid with a nice big gap */
@@ -55,7 +53,7 @@ img {
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card{
-    background-color: rgb(81,66,105);
+    background-color: rgb(71, 71, 71);
     color: white;
     padding: 1em;
     border-radius: 0.5em;
@@ -73,8 +71,75 @@ img {
 
 /* Styling for a footer section to take a bit of spcae at the bottom of the page */
 .footer{
-    background-color: rgb(81,66,105);
+    background-color: rgb(71, 71, 71);
     color: white;
     text-align: right;
     padding: 3em 3em;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(192, 147, 196);
+    text-shadow: 2px 2px 5px black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+.fancy-heading {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: rgb(192, 147, 196);
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    text-align: center;
+    color: #a56bac;
+    width: 60%;
+    margin: 0 auto 2em auto;
+    line-height: 1.5;
 }
